@@ -12,8 +12,8 @@ jobs:
 
       - uses: actions/setup-node@v7
         with:
-          node-version: '22'
-          cache: 'npm'
+          node-version: "22"
+          cache: "npm"
 
       - run: npm ci
 
@@ -25,4 +25,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - run: aws s3 sync dist/ s3://chirp-site-CHANGE-ME --delete
+      - run: aws s3 sync dist/ s3://chirp-site-mt-4521 --delete
