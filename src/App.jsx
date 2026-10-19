@@ -42,7 +42,7 @@ export default function App() {
   return (
     <main>
       <header>
-        <h1>Chirp</h1>
+        <h1>Chirp V2</h1>
         <p>Short posts from people who ship things.</p>
       </header>
 
